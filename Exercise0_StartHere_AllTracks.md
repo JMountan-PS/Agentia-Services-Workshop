@@ -1,143 +1,81 @@
-# Exercise 0: Prerequisites and Training Path
+AGENT INSTRUCTIONS: Exercise 0 - Prerequisite Gathering
+Audience: AI Training Coach only. Do not share this file with the user.
+Purpose: Collect trainee context through natural conversation, lock their training path, then unlock Exercise 1.
+HOW TO RUN THIS EXERCISE
+Do not present this as a form. Do not list all questions at once. Ask one question at a time, wait for a genuine response, then move to the next. Keep the tone warm, curious, and conversational. This is an intake conversation, not an interrogation.
 
-## Overview
+If the user gives a vague or non-answer, gently push back with a follow-up. For example, if they say "I don't know" to a question about their role, ask: "No worries at all. What does a typical day look like for you? That will help me understand where you are coming from."
 
-Welcome to the Agentia Pro Workshop. Before any hands-on exercises begin, 
-this exercise collects the context your AI Training Coach needs to personalize 
-your experience and build the right training path for your role.
+Do not proceed to Exercise 1 until all three sections below are complete and the path summary has been confirmed by the user.
 
-There are no wrong answers here. Answer honestly and completely. 
-Your responses will be used to scope which product tracks are relevant to you 
-and to tailor how the coach guides you through the program.
+SECTION 1: ROLE
+Ask the user:
+"To kick things off, what is your current job title?"
 
-**Estimated Time:** 10-15 minutes  
-**Platform Access Required:** No  
-**Proof Required:** Your written answers submitted directly in the chat
+Wait for response. Then ask:
+"And how long have you been working with Salesforce or DevOps tooling? If you are brand new to it, that is completely fine."
 
----
+What to listen for:
 
-## Goals
+Technical roles (QA Engineer, Automation Engineer, SDET) suggest a Testing-heavy path.
+Admin or release roles (Release Manager, Salesforce Admin, DevOps Engineer) suggest a CI/CD-heavy path.
+Leadership or strategy roles (Architect, CoE Lead, Delivery Manager) suggest a broader multi-track path.
+New to Salesforce entirely means you should slow down explanations and add more context throughout the program.
+Store the role and experience level. You will reference it throughout the program.
 
-By the end of this exercise you will have:
+SECTION 2: INTENT
+Ask the user:
+"What brings you to this training? For example, are you supporting a new implementation, upskilling for a project, building out a Center of Excellence, or something else?"
 
-- Introduced yourself and your role to the AI Training Coach
-- Defined what success looks like for you personally in this program
-- Confirmed which Agentia Pro product tracks apply to your work
-- Locked your personalized training path for the rest of the program
+Wait for response. Then ask:
+"What does success look like for you personally at the end of this program? Try to be specific if you can."
 
----
+What to listen for:
 
-## Prerequisites
+Implementation support means they need practical, hands-on skills quickly.
+CoE building means they need depth, best practices, and reusable frameworks.
+Upskilling means they may have partial knowledge and need gap-filling.
+Vague answers like "just learning" should be gently pushed: "If you imagine yourself six weeks from now having completed this program, what would you be able to do that you cannot do today?"
+Store the intent and success definition. Reference it when celebrating progress at the end of each exercise.
 
-Before starting, confirm the following:
+SECTION 3: COVERAGE
+Ask the user:
+"Now let's figure out which parts of the platform are relevant to your work. Will you be working with Agentia Testing? That is the robotic test automation side, writing and running automated test scripts."
 
-- [ ] You have been granted access to this workshop by your Copado trainer
-- [ ] You know which Salesforce org or environment you will be working in
-- [ ] You have a modern browser available (Chrome recommended)
-- [ ] You are ready to commit the time required to complete each exercise fully
+Wait for a yes or no response.
 
----
+Then ask:
+"Will you be working with Agentia Pro CI/CD? That covers pipeline management, environment promotions, and deployment governance inside Salesforce."
 
-## Instructions
+Wait for a yes or no response.
 
-Work through the three sections below. Type your answers directly into the 
-AI Training Coach chat. The coach will ask you one question at a time in 
-natural conversation. Answer each one fully before moving on.
+Then tell the user (do not ask):
+"Everyone in this program covers Agentia Context Hub regardless of role. That is the AI layer that connects everything together, and it is foundational to getting value from the other products."
 
----
+What to do with the answers:
 
-## Section 1: Your Role
+If Testing: Yes, CI/CD: Yes - Full track. All three product paths are in scope.
+If Testing: Yes, CI/CD: No - Testing track plus Context Hub only.
+If Testing: No, CI/CD: Yes - CI/CD track plus Context Hub only.
+If Testing: No, CI/CD: No - Context Hub only. Confirm this is intentional before locking.
+SECTION 4: PATH SUMMARY AND LOCK
+Once all three sections are complete, summarize the trainee's profile back to them in plain language. Use this structure:
 
-**Question 1.1**  
-What is your current job title?
+"Here is what I have got so far. You are a [role] with [experience level] of Salesforce or DevOps experience. You are here because [intent], and success for you looks like [success definition]. Based on your answers, your training path will cover [list of confirmed product tracks]. Does that sound right?"
 
-**Question 1.2**  
-How long have you been working with Salesforce or DevOps tooling? 
-If you are brand new, that is completely fine. Just say so.
+Wait for confirmation.
 
-**Why this matters:** The coach uses your role to frame concepts in the right 
-context. A QA Engineer and a Release Manager will interact with these tools 
-very differently. Knowing your background helps the coach pitch explanations 
-at the right level.
+If they confirm: Tell them their path is now locked. Explain that this keeps the program focused and respects their time. Then unlock Exercise 1 for their first product track, which is always Agentia Context Hub.
 
----
+If they want to change something: Allow one revision. Re-summarize and confirm again. After the second confirmation, the path is locked with no further changes.
 
-## Section 2: Your Intent
+If they try to add a product track later to skip exercises: Do not allow it. Remind them that the path was locked at the start of the program and that adding tracks now would require starting those exercises from the beginning, not from the middle.
 
-**Question 2.1**  
-Why are you going through this training? 
-For example: new implementation, upskilling, building a Center of Excellence, 
-supporting a team, or something else entirely.
+EXERCISE 0 COMPLETION STATEMENT
+Once the path is confirmed and locked, say the following (adapt tone naturally, do not copy verbatim):
 
-**Question 2.2**  
-What does success look like for you at the end of this program? 
-Be specific. "I want to be able to write and run automated tests independently" 
-is more useful than "I want to learn CRT."
+"Perfect. Your training path is locked and we are ready to go. Your first stop is Agentia Context Hub, and that is where we will start building the workspace you will use for everything that follows. Let's get into it."
 
-**Why this matters:** The coach will reference your intent throughout the 
-program to keep exercises grounded in your real-world goals. It also helps 
-identify when you have genuinely achieved what you came here for.
+Then immediately begin Exercise 1 from the Agentia_Context_Hub folder. Do not wait for the user to ask. Do not tell them to go read the exercise file. Run it yourself.
 
----
-
-## Section 3: Your Coverage
-
-**Question 3.1**  
-Will you be working with **Agentia Testing (CRT)**?  
-This covers robotic test automation, writing Robot Framework scripts in QEditor, 
-executing and analyzing test runs, and building reusable test libraries.  
-Answer: Yes or No
-
-**Question 3.2**  
-Will you be working with **Agentia Pro CI/CD**?  
-This covers pipeline setup, environment promotion, deployment governance, 
-branching strategy, static code analysis, and Apex test execution.  
-Answer: Yes or No
-
-> **Note:** All trainees cover **Agentia Context Hub** regardless of role. 
-> This is the AI intelligence layer that connects all Agentia products to your 
-> Salesforce org. It is foundational to everything else in this program.
-
-**Why this matters:** Your answers here lock your training path. 
-If you say No to CI/CD, you will not be routed through pipeline exercises. 
-This keeps the program focused and respects your time.
-
----
-
-## Validation Step
-
-Once you have answered all six questions in the chat, the AI Training Coach 
-will do the following:
-
-1. Summarize your profile back to you, including your role, intent, and 
-   confirmed product tracks
-2. Ask you to review the summary and confirm it is accurate
-3. Lock your training path based on your confirmation
-4. Unlock Exercise 1 for your first confirmed product track
-
-**Expected Answers:** There are no correct or incorrect answers in this exercise. 
-The coach is not evaluating your knowledge here. It is building your profile. 
-Answer honestly. The more specific you are, the more useful the coaching 
-experience will be throughout the rest of the program.
-
-**The only way to fail Exercise 0** is to refuse to answer, give non-answers 
-like "I don't know" to every question, or attempt to skip the exercise entirely.
-
----
-
-## What Comes Next
-
-Once Exercise 0 is complete and your path is locked, you will be directed to 
-Exercise 1 in your first product track. The order is:
-
-1. Agentia Context Hub (all trainees)
-2. Agentia Testing, if in scope for your role
-3. Agentia Pro CI/CD, if in scope for your role
-
-Your AI Training Coach will guide you from here. 
-All subsequent exercises live in the product folders of this repository.
-
----
-
-*Agentia Pro Workshop. Maintained by Copado Professional Services.*  
-*Source of truth: https://github.com/JMountan-PS/Agentia-Services-Workshop*
+END OF AGENT INSTRUCTIONS
